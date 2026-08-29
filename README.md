@@ -1,30 +1,91 @@
-# 🚗 UTEQ Smart Parking — Web Dashboard
+# 🚗 Smart Parking UTEQ
 
-Sistema de gestión y monitoreo en tiempo real para el parqueadero inteligente de la **Universidad Técnica Estatal de Quevedo (UTEQ)**. La plataforma web permite supervisar la disponibilidad de puestos, administrar la información de vehículos y usuarios autorizados, así como consultar la bitácora de accesos integrada con políticas de seguridad dinámicas desde la base de datos.
+Sistema web para la gestión inteligente del parqueadero de la Universidad Técnica Estatal de Quevedo (UTEQ). La plataforma permite visualizar, administrar y controlar el ingreso de vehículos, propietarios y puestos disponibles de forma centralizada y segura.
 
----
+## ✨ Funcionalidades principales
 
-## 🛠️ Tecnologías Utilizadas
+- Gestión de vehículos registrados
+- Control de propietarios y usuarios autorizados
+- Visualización del estado del parqueadero en tiempo real
+- Consulta de historial de acceso y salida
+- Filtrado por placa, propietario o información relevante
+- Interfaz responsiva y moderna basada en React + CoreUI
+- Integración con Supabase para almacenamiento y seguridad de datos
 
-* **Frontend:** React, Vite, CoreUI Icons & Components.
-* **Backend & Base de Datos:** Supabase (PostgreSQL), Row Level Security (RLS) y columnas dinámicas enmascaradas.
-* **Mapeo y UI:** Leaflet, CSS3 responsive.
+## 🛠️ Tecnologías utilizadas
 
----
+- React
+- Vite
+- CoreUI
+- Supabase
+- JavaScript
+- CSS / SCSS
 
-## 🚀 Características Principales
+## 📁 Requisitos
 
-* **Control de Acceso y Autorizaciones:** Clasificación en tiempo real de vehículos y propietarios registrados.
-* **Seguridad de Datos:** Integración con vistas/políticas RLS de Supabase para la protección de identidades (enmascaramiento dinámico de cédulas de identidad).
-* **Gestión de Puestos:** Visualización del estado de ocupación de espacios dentro del campus.
-* **Historial y Bitácora:** Registro de entradas, salidas y estancias del parqueadero.
-* **Filtros e Interfaz Adaptativa:** Búsqueda avanzada por placa, propietario o puesto sin recargar la vista.
+Antes de iniciar, asegúrate de tener instalado:
 
----
+- Node.js 18 o superior
+- npm o yarn
+- Cuenta de Supabase configurada
 
-## 💻 Instalación y Configuración Local
+## ⚙️ Instalación
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/Emyzamt12/Smart-Parking-UTEQ)
-   cd Smarth_ParquederoUTEQ
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/Emyzamt12/Smart-Parking-UTEQ.git
+cd Smart-Parking-UTEQ
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Ejecuta la aplicación en modo desarrollo:
+
+```bash
+npm run start
+```
+
+4. La aplicación estará disponible en:
+
+```bash
+http://localhost:5173
+```
+
+## 🔐 Variables de entorno
+
+Crea un archivo `.env` en la raíz del proyecto y configura tus credenciales de Supabase:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+## 🧩 Estructura del proyecto
+
+```bash
+src/
+├── components/
+├── hooks/
+├── lib/
+├── views/
+├── App.jsx
+├── routes.js
+└── main.jsx
+```
+
+## 📌 Descripción del proyecto
+
+Este proyecto busca optimizar la administración del parqueadero universitario mediante una herramienta digital que mejora la trazabilidad del acceso vehicular, facilita la organización de datos y reduce la carga operativa del personal encargado.
+
+## 🤝 Autor
+
+- Emy Zambrano
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.

@@ -1,6 +1,6 @@
 # 🚗 Smart Parking UTEQ
 
-![Vista principal del sistema Smart Parking UTEQ](assets/imagen1.png)
+![Vista principal del sistema Smart Parking UTEQ](src/assets/images/imagen1.png)
 
 Sistema web para la gestión inteligente del parqueadero de la Universidad Técnica Estatal de Quevedo (UTEQ). La plataforma permite visualizar, administrar y controlar el ingreso de vehículos, propietarios y puestos disponibles de forma centralizada y segura.
 
